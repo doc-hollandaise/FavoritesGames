@@ -14,6 +14,8 @@
 		7FB7A74720A3A05500B00126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB7A74620A3A05500B00126 /* Assets.xcassets */; };
 		7FB7A74A20A3A05500B00126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB7A74820A3A05500B00126 /* LaunchScreen.storyboard */; };
 		7FB7A75520A3A05500B00126 /* FavoritesGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB7A75420A3A05500B00126 /* FavoritesGamesTests.swift */; };
+		7FB7A76020A3A0B500B00126 /* DataBroker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB7A75F20A3A0B500B00126 /* DataBroker.swift */; };
+		7FB7A76220A3A29700B00126 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB7A76120A3A29700B00126 /* GameListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		7FB7A75020A3A05500B00126 /* FavoritesGamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavoritesGamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB7A75420A3A05500B00126 /* FavoritesGamesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesGamesTests.swift; sourceTree = "<group>"; };
 		7FB7A75620A3A05500B00126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FB7A75F20A3A0B500B00126 /* DataBroker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBroker.swift; sourceTree = "<group>"; };
+		7FB7A76120A3A29700B00126 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 			children = (
 				7FB7A73C20A3A05500B00126 /* AppDelegate.swift */,
 				7FB7A73E20A3A05500B00126 /* ViewController.swift */,
+				7FB7A76120A3A29700B00126 /* GameListViewController.swift */,
+				7FB7A75F20A3A0B500B00126 /* DataBroker.swift */,
 				7FB7A74020A3A05500B00126 /* Main.storyboard */,
 				7FB7A74620A3A05500B00126 /* Assets.xcassets */,
 				7FB7A74820A3A05500B00126 /* LaunchScreen.storyboard */,
@@ -204,6 +210,8 @@
 			files = (
 				7FB7A74520A3A05500B00126 /* FavoritesGames.xcdatamodeld in Sources */,
 				7FB7A73F20A3A05500B00126 /* ViewController.swift in Sources */,
+				7FB7A76220A3A29700B00126 /* GameListViewController.swift in Sources */,
+				7FB7A76020A3A0B500B00126 /* DataBroker.swift in Sources */,
 				7FB7A73D20A3A05500B00126 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
