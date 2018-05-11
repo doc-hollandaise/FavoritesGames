@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     func setupActivityView() {
         activityView = UIActivityIndicatorView(frame: self.view.frame)
-        activityView.activityIndicatorViewStyle = .whiteLarge
+        activityView.activityIndicatorViewStyle = .gray
         activityView.hidesWhenStopped = true
         activityView.isHidden = true
         view.addSubview(activityView)
@@ -33,7 +33,9 @@ class ViewController: UIViewController {
     }
     
     func stopSpinner() {
-        activityView.stopAnimating()
+        performUIUpdatesOnMain {
+            self.activityView.stopAnimating()
+        }
     }
     
     
