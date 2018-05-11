@@ -46,9 +46,17 @@ class GameListViewController: ViewController {
     
     func searchForGame() {
         dismissKeyboard()
-        if let text = searchTextView.text {            
+        if let text = searchTextView.text {
+            startSpinner()
             let broker = DataBroker()
             broker.search(forGame: text, completionHandler: {games, error in
+                self.stopSpinner()
+                
+                guard error == nil else {
+                    self.alertUser(withMessage: error!)
+                    return
+                }
+                
                 performUIUpdatesOnMain {
                     if let nc = self.navigationController, let vc = self.storyboard?.instantiateViewController(withIdentifier: "SearchVC") as? SearchResultsViewController {
                         vc.games = games
