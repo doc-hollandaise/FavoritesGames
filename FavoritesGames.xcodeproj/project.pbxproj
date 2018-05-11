@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F43FF1420A53CC400B790F5 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43FF1320A53CC400B790F5 /* FavoriteCell.swift */; };
 		7FB7A73D20A3A05500B00126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB7A73C20A3A05500B00126 /* AppDelegate.swift */; };
 		7FB7A73F20A3A05500B00126 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB7A73E20A3A05500B00126 /* ViewController.swift */; };
 		7FB7A74220A3A05500B00126 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB7A74020A3A05500B00126 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		7FB7A77620A4FABD00B00126 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB7A77520A4FABD00B00126 /* FavoritesViewController.swift */; };
 		7FB7A77820A4FDD400B00126 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB7A77720A4FDD400B00126 /* DetailViewController.swift */; };
 		7FB7A77A20A5252800B00126 /* FGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB7A77920A5252800B00126 /* FGTabBarController.swift */; };
+		7FFA75BD20A546AF0017828E /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA75BC20A546AF0017828E /* FavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F43FF1320A53CC400B790F5 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		7FB7A73920A3A05500B00126 /* FavoritesGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoritesGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB7A73C20A3A05500B00126 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FB7A73E20A3A05500B00126 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		7FB7A77520A4FABD00B00126 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		7FB7A77720A4FDD400B00126 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7FB7A77920A5252800B00126 /* FGTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGTabBarController.swift; sourceTree = "<group>"; };
+		7FFA75BC20A546AF0017828E /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 				7FB7A76920A3B72600B00126 /* DataController.swift */,
 				7FB7A75F20A3A0B500B00126 /* DataBroker.swift */,
 				7FB7A76720A3B60800B00126 /* GameListCell.swift */,
+				7F43FF1320A53CC400B790F5 /* FavoriteCell.swift */,
 				7FB7A77220A4EB4700B00126 /* Utility */,
 				7FB7A74620A3A05500B00126 /* Assets.xcassets */,
 				7FB7A74020A3A05500B00126 /* Main.storyboard */,
@@ -135,6 +140,7 @@
 				7FB7A77520A4FABD00B00126 /* FavoritesViewController.swift */,
 				7FB7A77320A4F33E00B00126 /* SearchResultsViewController.swift */,
 				7FB7A77720A4FDD400B00126 /* DetailViewController.swift */,
+				7FFA75BC20A546AF0017828E /* FavViewController.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -263,7 +269,9 @@
 				7FB7A76020A3A0B500B00126 /* DataBroker.swift in Sources */,
 				7FB7A76E20A3C6F700B00126 /* GCDBlackBox.swift in Sources */,
 				7FB7A73D20A3A05500B00126 /* AppDelegate.swift in Sources */,
+				7F43FF1420A53CC400B790F5 /* FavoriteCell.swift in Sources */,
 				7FB7A77620A4FABD00B00126 /* FavoritesViewController.swift in Sources */,
+				7FFA75BD20A546AF0017828E /* FavViewController.swift in Sources */,
 				7FB7A77020A4E52900B00126 /* ImageFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
