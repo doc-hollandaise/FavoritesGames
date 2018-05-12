@@ -11,6 +11,7 @@ FavoriteGames is an app to browse recent games, as well as searching for specifi
   <li>Games can be tapped to see more details. You may Favorite games on this detail screen.</li>
   <li>If you wish to search for a specific game, type it into the search bar and press the Search button. You'll receive a list of games that could match your search.</li>
   <li>You can see all the games you have favorited by tapping the star in the bottom tab bar</li>
+</ul>
   
 <h1>Contributions</h1>
 FavoriteGames is currently closed to community contributions at this time as it is in initial development.
