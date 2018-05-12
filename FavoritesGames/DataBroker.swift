@@ -38,9 +38,17 @@ class GameCover : Codable {
 
 class DataBroker {
     func getGames(completionHandler: @escaping (_ response: [Game]?, _ error: String?    ) -> Void)  {
-        var request = URLRequest(url: URL(string: "https://api-endpoint.igdb.com/games/?fields=name,summary,cover,url&filter[release_dates.date]&filter[rating][gt]=75&order=release_dates.date:desc&limit=50")!)
-        request.addValue("1631cd9547933145c916e1d78fd2f437", forHTTPHeaderField: "user-key")
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        let requestString = DataBrokerConstants.Games.url
+            + DataBrokerConstants.Games.fieldsParam
+            + DataBrokerConstants.Games.fieldsParam
+            + DataBrokerConstants.Games.filterParam
+            + DataBrokerConstants.Games.orderparam
+            + DataBrokerConstants.Games.extraParams
+        
+        var request = URLRequest(url: URL(string: requestString)!)
+        request.addValue(DataBrokerConstants.Headers.userKey, forHTTPHeaderField: "user-key")
+        request.addValue(DataBrokerConstants.Headers.acceptType, forHTTPHeaderField: "Accept")
         request.timeoutInterval = 10
         let session = URLSession.shared
         let task = session.dataTask(with: request) { data, response, error in
@@ -64,9 +72,18 @@ class DataBroker {
     }
     
     func search(forGame game: String, completionHandler: @escaping (_ response: [Game]?, _ error: String?    ) -> Void)  {
-        var request = URLRequest(url: URL(string: "https://api-endpoint.igdb.com/games/?search=\(game)&fields=name,summary,cover,url&limit=25&expand=game")!)
-        request.addValue("1631cd9547933145c916e1d78fd2f437", forHTTPHeaderField: "user-key")
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        let requestString = DataBrokerConstants.Games.url
+            + DataBrokerConstants.Games.fieldsParam
+            + DataBrokerConstants.Games.fieldsParam
+            + DataBrokerConstants.Games.filterParam
+            + DataBrokerConstants.Games.orderparam
+            + DataBrokerConstants.Games.extraParams
+            + "&search=\(game)"
+
+        var request = URLRequest(url: URL(string: requestString)!)
+        request.addValue(DataBrokerConstants.Headers.userKey, forHTTPHeaderField: "user-key")
+        request.addValue(DataBrokerConstants.Headers.acceptType, forHTTPHeaderField: "Accept")
         request.timeoutInterval = 10
         let session = URLSession.shared
         let task = session.dataTask(with: request) { data, response, error in

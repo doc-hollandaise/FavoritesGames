@@ -24,8 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = window?.rootViewController as! UINavigationController
         let tabbarController = navigationController.topViewController as! FGTabBarController
         tabbarController.dataController = dataController
-//        let notebooksListViewController = tabbarController.viewControllers?.first as! GameListViewController
-//        notebooksListViewController.dataController = dataController
+
         
         return true
     }

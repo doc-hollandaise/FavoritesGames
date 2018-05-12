@@ -17,27 +17,20 @@ class FavoritesViewController : ViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var newTable: UITableView!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func viewWillAppear(_ animated: Bool) {
         
         let tabbar = self.tabBarController as! FGTabBarController
         dataController = tabbar.dataController
+        tabbar.navigationItem.title = "FAVORITES"
         
         setupFetchedResultsController()
-        
-        
     }
     
-    func removeGame(at: IndexPath) {
-        
-    }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return fetchedResultsController.sections?.count ?? 1
-    }
     
     @objc func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fetchedResultsController.sections?[section].numberOfObjects ?? 0
+        return fetchedResultsController.fetchedObjects?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,12 +42,7 @@ class FavoritesViewController : ViewController, UITableViewDataSource, UITableVi
         return cell
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        switch editingStyle {
-        case .delete: removeGame(at: indexPath)
-        default: () // Unsupported
-        }
-    }
+    
 }
 
 extension FavoritesViewController : NSFetchedResultsControllerDelegate {
@@ -69,7 +57,7 @@ extension FavoritesViewController : NSFetchedResultsControllerDelegate {
             fetchedResultsController.delegate = self
             do {
                 try? fetchedResultsController.performFetch()
-     
+                newTable.reloadData()
             } catch {
                 fatalError("The fetch could not be performed: \(error.localizedDescription)")
             }

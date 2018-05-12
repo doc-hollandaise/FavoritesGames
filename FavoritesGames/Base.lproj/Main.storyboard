@@ -14,7 +14,7 @@
         <!--POPULAR GAMES-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GameListViewController" customModule="FavoritesGames" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="POPULAR GAMES" id="BYZ-38-t0r" customClass="GameListViewController" customModule="FavoritesGames" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,9 +115,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Games" id="bfq-Ce-aHe"/>
+                    <tabBarItem key="tabBarItem" title="" image="list" selectedImage="list" id="bfq-Ce-aHe">
+                        <color key="badgeColor" name="selectedMenuItemColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="POPULAR GAMES" id="hIR-Yl-mQD"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="gameTableView" destination="jg5-ew-8b1" id="umk-TL-Ikq"/>
@@ -129,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="873" y="54"/>
         </scene>
-        <!--FAVORITE GAMES-->
+        <!--FAVORITES-->
         <scene sceneID="3Am-0O-gbJ">
             <objects>
-                <viewController storyboardIdentifier="FavoritesVC" id="9lf-dP-MFu" customClass="FavoritesViewController" customModule="FavoritesGames" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FavoritesVC" title="FAVORITES" id="9lf-dP-MFu" customClass="FavoritesViewController" customModule="FavoritesGames" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Clp-Za-JRF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,7 +181,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Xu1-Ye-GTR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="DvY-dg-yyM"/>
+                    <tabBarItem key="tabBarItem" title="" image="Favorite" selectedImage="Favorite" id="DvY-dg-yyM"/>
                     <navigationItem key="navigationItem" title="FAVORITE GAMES" id="Hyh-1g-RXK"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
@@ -365,10 +368,10 @@
             </objects>
             <point key="canvasLocation" x="-766" y="53"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Games-->
         <scene sceneID="CwT-JV-MAB">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jBv-vm-LlW" customClass="FGTabBarController" customModule="FavoritesGames" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController title="Games" automaticallyAdjustsScrollViewInsets="NO" id="jBv-vm-LlW" customClass="FGTabBarController" customModule="FavoritesGames" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dwn-Bg-G9y"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PR2-Hx-g7l">
@@ -387,7 +390,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Favorite" width="30" height="30"/>
         <image name="addfavorite" width="30" height="30"/>
+        <image name="list" width="30" height="30"/>
         <image name="placeholder150" width="50" height="50"/>
     </resources>
 </document>

@@ -53,9 +53,8 @@ class DetailViewController : ViewController {
                 if let url = URL(string: path) {
                 fetcher.imageFromUrl(url: url, completionHandler: { data, error in
                     if let err = error {
-                        performUIUpdatesOnMain {
-                            self.alertUser(withMessage: err)
-                        }
+                        self.alertUser(withMessage: err)
+                        
                         return
                     }
                     if let imgData = data {

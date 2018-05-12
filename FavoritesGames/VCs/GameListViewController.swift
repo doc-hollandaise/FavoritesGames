@@ -23,8 +23,8 @@ class GameListViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tabbar = self.tabBarController as! FGTabBarController
-        dataController = tabbar.dataController
+        
+       
         
         let broker = DataBroker()
         startSpinner()
@@ -43,6 +43,16 @@ class GameListViewController: ViewController {
             
         })
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let tabbar = self.tabBarController as! FGTabBarController
+        dataController = tabbar.dataController
+        tabbar.navigationItem.title = "POPULAR GAMES"
+    }
+    
+
     
     func searchForGame() {
         dismissKeyboard()
@@ -72,6 +82,7 @@ class GameListViewController: ViewController {
     func dismissKeyboard() {
         self.searchTextView.resignFirstResponder()
     }
+    
     
     
 }
