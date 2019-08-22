@@ -1,6 +1,6 @@
 # FavoritesGames
 
-FavoriteGames is an app to browse recent games, as well as searching for specific ones. After you've found games you like, you can favorite them and see your favorites!
+FavoriteGames is an app to browse recent games, as well as searching for specific ones. After you've found games you like, you can favorite them and see your favorites! This app was developed for my capstone project in the Udacity nanodegree for iOS development.
 
 <h1>Build Requirements</h1>
   FavoriteGames is a simple iOS app with few requirements. It requires Xcode and the ability to build/run iOS 10.0 or greater on your test device/simulator.
@@ -14,4 +14,4 @@ FavoriteGames is an app to browse recent games, as well as searching for specifi
 </ul>
   
 <h1>Contributions</h1>
-FavoriteGames is currently closed to community contributions at this time as it is in initial development.
+FavoriteGames is currently closed to community contributions, as this app will not be developed further.
